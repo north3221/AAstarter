@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context="org.ventoso.aastarter.MainActivity">
+    tools:context="org.north3221.aastarter.com.north3221.aastarter.MainActivity">
 
     <TextView
         android:id="@+id/infoip"

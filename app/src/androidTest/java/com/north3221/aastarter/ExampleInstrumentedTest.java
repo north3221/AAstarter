@@ -1,4 +1,4 @@
-package org.ventoso.aastarter;
+package com.north3221.aastarter;
 
 import android.content.Context;
 

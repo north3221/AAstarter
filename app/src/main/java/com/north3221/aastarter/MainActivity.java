@@ -1,4 +1,4 @@
-package org.ventoso.aastarter;
+package com.north3221.aastarter;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
@@ -13,8 +13,9 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import com.north3221.aastarter.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
             if (action.equalsIgnoreCase("android.intent.action.MAIN")) {
                 startService(i);
             } else
-            if (action.equalsIgnoreCase("android.intent.action.LOCKED_BOOT_COMPLETE")) {
+            if (action.equalsIgnoreCase("com.north3221.aastarter.service.START")) {
                 startService(i);
                 finish();
             } else
-            if (action.equalsIgnoreCase("org.ventoso.aastarter.STOP")) {
+            if (action.equalsIgnoreCase("com.north3221.aastarter.service.STOP")) {
                 stopService(i);
                 finish();
             }

@@ -5,11 +5,11 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "org.ventoso.aastarter"
+        applicationId "com.north3221.aastarter"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 3
-        versionName "1.3"
+        versionName "0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

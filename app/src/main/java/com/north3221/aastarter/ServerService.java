@@ -1,4 +1,4 @@
-package org.ventoso.aastarter;
+package com.north3221.aastarter;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -21,6 +21,8 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 
 import static android.app.NotificationManager.IMPORTANCE_HIGH;
+
+import com.north3221.aastarter.R;
 
 public class ServerService extends Service {
 

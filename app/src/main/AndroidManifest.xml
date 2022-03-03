@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.ventoso.aastarter">
+    package="com.north3221.aastarter">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
      <queries>
         <package android:name="com.google.android.projection.gearhead" />
     </queries>
@@ -15,20 +14,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:launchMode="singleInstance" android:showOnLockScreen="true">
+        <activity android:name="com.north3221.aastarter.MainActivity" android:launchMode="singleInstance" android:showOnLockScreen="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="org.ventoso.aastarter.STOP" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".BootActivity" android:enabled="true" android:exported="true" android:directBootAware="true" >
+        <receiver android:name=".ServiceActivity" android:enabled="true" android:exported="true" >
             <intent-filter>
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="com.north3221.aastarter.service.START" />
+                <action android:name="com.north3221.aastarter.service.STOP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-        <service android:name=".ServerService" android:enabled="true" android:exported="true" android:directBootAware="true">
+        <service android:name=".ServerService" android:enabled="true" android:exported="true" >
 
         </service>
     </application>
