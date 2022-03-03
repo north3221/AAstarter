@@ -5,6 +5,6 @@ This app waits for a trigger, which I do via tasker, and starts Android Auto ins
 
 It also allows for starting and stopping the service via an intent, so can do that from tasker too.
 
-You can build it or get it from the [Releases](https://github.com/north3221/AAstarter/release) section and you have to install it on the master phone. 
+You can build it or get it from the [Releases](https://github.com/north3221/AAstarter/releases) section and you have to install it on the master phone. 
 
 
