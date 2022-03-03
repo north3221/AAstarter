@@ -7,4 +7,4 @@ It also allows for starting and stopping the service via an intent, so can do th
 
 You can build it or get it from the [Releases](https://github.com/north3221/AAstarter/releases) section and you have to install it on the master phone. 
 
-
+for more details see my [AAGateway](https://github.com/north3221/AAGateWay)
